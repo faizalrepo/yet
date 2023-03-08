@@ -15,12 +15,12 @@ body {
     background-size: cover;
     background-position: center;
     /* padding-left: 900px; */
-    padding-right: 90px;
+    /* padding-right: 90px; */
 }
 
-.slogan {
+/* .slogan {
     padding-right: 470px;
-}
+} */
 
 .slogan .sl2 {
     /* padding-top: 50px; */
@@ -63,9 +63,6 @@ header {
     animation-delay: calc(.2s * var(--i)); */
     
 }
-
-
-
 
 .navbar a::after {
     content: '';
@@ -278,7 +275,7 @@ h1 {
     font-family: 'Michroma', sans-serif;
     font-size: 90px;
     line-height: 100px;
-    margin-left: -10px;
+    /* margin-left: -10px; */
     color: transparent;
     -webkit-text-stroke: 0.0001px #04040400;
     background: url(diagonal-stripe-green-and-black-pattern-free-vector.webp);
@@ -323,6 +320,10 @@ h1 {
     display: flex;
 }
 
+.slogan {
+    margin: 20px;
+}
+
 
 @keyframes slideRight {
     0% {
@@ -336,7 +337,7 @@ h1 {
     }
 }
 
-@keyframes slideTop {
+/* @keyframes slideTop {
     0% {
         transform: translateY(100px);
         opacity: 0;
@@ -346,7 +347,7 @@ h1 {
         transform: translateY(0);
         opacity: 1;
     }
-}
+} */
 
 @keyframes back {
     100% {
@@ -354,7 +355,7 @@ h1 {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1100px) {
     .navbar .login,
     .navbar .s{
         display: none;
@@ -367,4 +368,54 @@ h1 {
     .dropdown-menu {
         display: block;
     }
+
+    .wrapper {
+        display: none;
+    }
+
+    .slogan {
+        scale: .9;
+        align-items: baseline;
+        justify-content: left;
+        margin: -20px;
+    }
+
+    body {
+        background-image: url("g2.jpg");
+        /* background-repeat: no-repeat; */
+        background-position: left;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .logo {
+        scale: .7;
+        margin-left: -50px;
+    }
 }
+
+@media (max-width: 710px) {
+    .slogan {
+        scale: .8;
+        margin: -50px;
+    }
+}
+
+@media (max-width: 570px) {
+    .slogan {
+        scale: .7;
+        margin: -80px;
+    }
+}
+
+@media (max-width: 508px) {
+    .slogan {
+        scale: .5;
+        margin: -150px;
+    }
+
+    .toggle_btn {
+        margin-right: -20px;
+    }
+}
+
